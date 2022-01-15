@@ -22,7 +22,7 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['@typescript-eslint', 'prettier', 'import'],
-  ignorePatterns: ['node_modules', '/*.js', 'dist'],
+  ignorePatterns: ['node_modules', '/*.js', 'dist', 'coverage'],
   rules: {
     camelcase: 'error',
     'prettier/prettier': 'error',

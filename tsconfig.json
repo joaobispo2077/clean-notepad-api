@@ -21,13 +21,13 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@src/*": ["./src/*"],
-      "@test/*": ["./test/*"]
+      "@src/*": ["src/*"],
+      "@tests/*": ["tests/*"]
     },
-    "rootDirs": ["./src", "./test"],
+    "rootDirs": ["./src", "./tests"],
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
   },
-  "include": ["./src/**/*.ts", "./test/**/*.ts"],
+  "include": ["./src/**/*.ts", "./tests/**/*.ts"],
   "exclude": ["./node_modules/*", "dist"]
 }
