@@ -1,4 +1,4 @@
-import { sum } from '../../src/example';
+import { sum } from '@src/example';
 
 describe('example test', () => {
   it('should be 4 sum of 2 and 2', () => {

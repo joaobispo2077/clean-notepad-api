@@ -28,6 +28,7 @@ module.exports = {
     'prettier/prettier': 'error',
     'no-console': 'error',
     "import/no-unresolved": "error",
+    'import/no-named-as-default-member': 'off',
     'class-methods-use-this': 'off',
     'import/prefer-default-export': 'off',
     'no-shadow': 'off',
