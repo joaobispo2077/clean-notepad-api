@@ -9,5 +9,13 @@
     "node": ">=16.13.1",
     "npm": ">=8.1.2",
     "yarn": "^1.22.5"
+  },
+  "scripts": {
+    "echo": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.0.2",
+    "@commitlint/config-conventional": "^16.0.0",
+    "husky": "^7.0.4"
   }
 }
