@@ -36,7 +36,13 @@ module.exports = {
     'lines-between-class-members': 'off',
     'import/order': ['error', {
       'newlines-between': 'always',
-      groups: ['module', '/^@/', ['parent', 'sibling', 'index']],
+      groups: ['external', ['parent', 'sibling', 'index']],
+      "pathGroups": [
+        {
+          "pattern": "/^@/",
+          "group": "external"
+        }
+      ],
       alphabetize: { order: 'asc', caseInsensitive: true },
     }],
   },
