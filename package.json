@@ -11,7 +11,7 @@
     "yarn": "^1.22.5"
   },
   "scripts": {
-    "start": "cross-env NODE_ENV=production node dist/index.js",
+    "start": "cross-env NODE_ENV=production node dist/src/index.js",
     "dev": "yarn ts-node-dev --transpile-only src/index.ts",
     "build": "yarn tsc -p tsconfig-build.json",
     "prebuild": "yarn rimraf dist",
