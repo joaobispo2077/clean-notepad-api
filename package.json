@@ -16,13 +16,19 @@
     "build": "yarn tsc -p tsconfig-build.json",
     "prebuild": "yarn rimraf dist",
     "echo": "echo \"Error: no test specified\" && exit 1",
+    "lint": "yarn lint:check && yarn style:check ",
+    "lint:check": "eslint ./src ./test --ext .ts",
+    "lint:fix": "eslint ./src ./test --ext .ts --fix",
+    "style:check": "prettier --check ./src/**/*.ts ./test/**/*.ts",
+    "style:fix": "prettier --write src/**/*.ts test/**/*.ts",
     "test:coverage": "yarn test:unit --coverage",
     "test:unit": "jest",
     "commit": "yarn git-cz"
   },
   "dependencies": {
     "cross-env": "^7.0.3",
-    "module-alias": "^2.2.2"
+    "module-alias": "^2.2.2",
+    "winston": "^3.4.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.0.2",
