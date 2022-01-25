@@ -12,11 +12,7 @@ export class MailAccountRepositoryInMemory implements MailAccountRepository {
   async findByEmail(email: string): Promise<MailAccount | null> {
     const user = this.users.find((user) => user.email === email);
 
-    if (!user) {
-      return null;
-    }
-
-    return user;
+    return user || null;
   }
 
   async findAll(): Promise<MailAccount[]> {
