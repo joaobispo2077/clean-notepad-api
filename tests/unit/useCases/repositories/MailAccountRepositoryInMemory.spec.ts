@@ -9,4 +9,27 @@ describe('MailAccountRepositoryInMemory', () => {
 
     expect(mailAccount).toBe(null);
   });
+
+  it('should be able to return a list of mailAccount from repository', async () => {
+    const mailAccountRepositoryInMemory = new MailAccountRepositoryInMemory();
+
+    const firstUser = {
+      email: 'first@email.com',
+      name: 'First Name',
+    };
+
+    const secondUser = {
+      email: 'second@email.com',
+      name: 'Second Name',
+    };
+
+    await mailAccountRepositoryInMemory.create(firstUser);
+
+    await mailAccountRepositoryInMemory.create(secondUser);
+
+    const mailAccounts = await mailAccountRepositoryInMemory.findAll();
+
+    expect(mailAccounts.length).toBe(2);
+    expect(mailAccounts).toEqual([firstUser, secondUser]);
+  });
 });

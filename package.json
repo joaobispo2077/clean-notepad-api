@@ -21,6 +21,7 @@
     "lint:fix": "eslint ./src ./test --ext .ts --fix",
     "style:check": "prettier --check ./src/**/*.ts ./test/**/*.ts",
     "style:fix": "prettier --write src/**/*.ts test/**/*.ts",
+    "test:dev": "jest --watch --runInBand",
     "test:coverage": "yarn test:unit --coverage",
     "test:unit": "jest",
     "commit": "yarn git-cz"
