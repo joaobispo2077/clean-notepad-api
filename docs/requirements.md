@@ -1,6 +1,10 @@
 API Requirements
 
 1. Register user on mailing list
+
+- email has to be valid
+- name has to be valid
+
 2. Sent email to user with bonus by subscription
 3. User should be able to create a note
 4. User should be able to edit a note
